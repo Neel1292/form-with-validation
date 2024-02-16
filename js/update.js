@@ -7,6 +7,8 @@ const passRequire = [
     { regex: /[^A-Za-z0-9]/, index: 4}, // At least one special character
 ];
 
+let user_name = document.getElementById('name');
+
 
 document.addEventListener("DOMContentLoaded", function() {
 const eyeIcon = document.querySelector("#eye-icon");
@@ -30,7 +32,20 @@ function populateForm (email) {
   }
 }
 
-populateForm(email)
+populateForm(email);
+
+user_name.addEventListener("input", function(e){
+  let isCharacter = (/^[A-Za-z]+(?: [A-Za-z]+)*$/).test(e.target.value);
+  const inputControl = user_name.parentElement;
+  const errorDisplay = inputControl.querySelector(".error");
+
+  if (!isCharacter) {
+    errorDisplay.innerText = 'Bro You are not name after King '
+  } else {
+      errorDisplay.innerText = "";
+      
+  }
+});
 
 document.querySelector('.update-form').addEventListener('submit', e => {
   e.preventDefault()
