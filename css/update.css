@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Protest Strike', sans-serif;
+    background-color: #95d2ea;
+    /* background-color: #4285F4; */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.page-width {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;    
+}
+
+.site-header {
+    padding: 25px 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 15px;
+    color: deepskyblue;
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none !important;
+    color: currentColor !important;
+}
+
+.btn {
+    background-color: rgb(9, 159, 224);
+    border: 1px solid transparent;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color:white;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 1px solid rgb(9, 159, 224);
+    color: rgb(9, 159, 224);
+    border-radius: 5px;
+}
+
+.error {
+    font-size: 12px;
+    color: red;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.main {
+    width: 40%;
+    margin: 20px auto;
+    padding: 5px 0;
+}
+
+.form-sec { 
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 0 50px;
+}
+
+.update-from {
+    padding: 15px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.input-control {
+    padding: 0 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    padding: 12px 5px;
+    width: 100%;
+}
+
+input[type=submit] {
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: rgb(9, 159, 224);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    min-width: 120px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    border-color: rgb(9, 159, 224);
+    background-color: transparent;
+    color: rgb(9, 159, 224);
+}
+
+input[type=submit]:focus {
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(9, 159, 224);
+}
+
+input[type=text], input[type=number],input[type=email], input[type=password], textarea {
+    width: 100%;
+    padding: 12px 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(104, 178, 209);
+    border-radius: 5px;
+    color: rgb(104, 178, 209);
+}
+
+input:focus, textarea:focus {
+    outline: 1px dashed rgb(104, 178, 209);
+    border: none;
+}
+
+::placeholder {
+    color: rgb(104, 178, 209);
+}
+
+.input-control:nth-child(5) {
+    position: relative;
+}
+
+.input-control:nth-child(5) #eye-icon {
+    position: absolute;
+    right: 50px;
+    top: 28%;
+    color: #aaa;
+}
+
+.password-match-list{
+    display: none;
+    position: absolute;
+    top: 85%;
+    width: 490px;
+    border-radius: 10px;
+    padding: 2px 12px;
+    background-color: #ffffffa3;
+    z-index: 999;
+}
+
+.password-match-list li{
+    margin-bottom: 10px;
+    color: red;
+}
+
+.password-match-list li i{
+    margin-right: 5px;
+}
+
+.password-match-list .fa-xmark{
+    color: red;
+}
+
+.password-match-list li.valid, .password-match-list li.valid span, .password-match-list .fa-check {
+    color: #09c372;
+}

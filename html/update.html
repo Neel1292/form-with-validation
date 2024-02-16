@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/update.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/update.css">
+    <title>Update | Data</title>
+</head>
+<body>
+
+    <div class="main">
+        <div class="page-width">
+            <div class="form-sec">
+                <h2>Update Your Data </h2>
+                <form action="" class="update-form">
+                
+                    <div class="input-control">
+                    <!-- <label>Name</label> -->
+                        <input type="text" name="userName" id="name" placeholder="What's Your Good Name">
+                        <span class="error"></span> 
+                    </div>
+                    
+                    <div class="input-control">
+                    <!-- <label>Age</label> -->
+                        <input type="number" name="userAge" id="age" placeholder="How Old Are You ? eg: 18-30">
+                        <span class="error"></span> 
+                    </div>
+                    
+                    <div class="input-control">
+                    <!-- <label>Mobile No.</label> -->
+                        <input type="number" id="mobile_number" name="userMobileNum" placeholder="Enter Your Mobile Number" maxlength="10"  disabled>
+                        <span class="error"></span>
+                    </div>
+                    
+                    <div class="input-control">
+                    <!-- <label>Email</label> -->
+                        <input type="email" id="email" name="userEmail" placeholder="Drop your Mail" disabled>
+                        <span class="error"></span>
+                    </div>
+                    
+                    <div class="input-control">
+                        <!-- <label>Password</label> -->
+                            <input type="password" id="password" name="userPassword" placeholder="Enter Password"/>
+                            <span class="error"></span>
+                            <i id="eye-icon" class="fa-solid fa-eye"></i>
+                            <ul class="password-match-list">
+                                <li>
+                                    <i class="fa-solid fa-xmark"></i>
+                                    <span>At least 8 character length</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-xmark"></i>
+                                    <span>At least 1 number (0-9)</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-xmark"></i>
+                                    <span>At least 1 uppercase letter (A-Z)</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-xmark"></i>
+                                    <span>At least 1 lowercase letter (a-z)</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-xmark"></i>
+                                    <span>At least 1 special symbol (!-&)</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    <div class="button-row">
+                        <input value="Are you Sure ?" type="submit"/>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/update.js" defer></script>
+</body>
+</html>

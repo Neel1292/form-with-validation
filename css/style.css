@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Protest Strike', sans-serif;
+    background-color: #95d2ea;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.page-width {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;    
+}
+
+.site-header {
+    padding: 25px 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.student-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.student-container .student-choice {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.student-container .button-control {
+    display: flex;
+    gap: 40px; 
+    padding: 20px 0;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    color: #0a6f9a;
+}
+
+#btn {
+    background-color: rgb(11, 182, 239);
+    border: 1px solid transparent;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+#btn:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    /* color: rgb(11, 182, 239) !important; */
+    color: white !important;
+    padding: 20px;
+    border-radius: 5px;
+}
