@@ -135,7 +135,6 @@ input[type=submit] {
     font-size: 12px;
     font-weight: 700;
     min-width: 120px;
-    cursor: pointer;
 }
 
 input[type=submit]:hover {
