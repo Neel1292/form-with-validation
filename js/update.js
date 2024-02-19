@@ -9,7 +9,6 @@ const passRequire = [
 
 let user_name = document.getElementById('name');
 
-
 document.addEventListener("DOMContentLoaded", function() {
 const eyeIcon = document.querySelector("#eye-icon");
     
@@ -115,7 +114,6 @@ userPassword.addEventListener('blur', e => {
   document.querySelector('.password-match-list').style.display = 'none'
 })
 
-
 eyeIcon.addEventListener("click", ()=> {
   password.type = password.type === "password" ? "text" : "password";
 
@@ -126,16 +124,16 @@ function isEmpty(data) {
     return data.value.trim() === '';
 }
   
-  const setError = (element, message) => {
-      const inputControl = element.parentElement;
-      const errorDisplay = inputControl.querySelector(".error");
+function setError(element, message) {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector(".error");
     
-      errorDisplay.innerText = message;   
-      inputControl.classList.add("error");
-      inputControl.classList.remove("success");
-  };
+    errorDisplay.innerText = message;   
+    inputControl.classList.add("error");
+    inputControl.classList.remove("success");
+};
   
-  const setSuccess = (element) => {
+function setSuccess(element) {
     const inputControl = element.parentElement;
     const successDisplay = inputControl.querySelector(".error");
   
